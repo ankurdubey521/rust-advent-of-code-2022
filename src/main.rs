@@ -1,8 +1,8 @@
 use rust_advent_of_code_2022::day_1;
+use std::io;
 
-fn main() {
-    let day1_result = day_1::execute();
-    day1_result
-        .expect("Should have been able to calculate day 1 result")
-        .show();
+fn main() -> Result<(), io::Error> {
+    day_1::execute()?.show();
+
+    Ok(())
 }
